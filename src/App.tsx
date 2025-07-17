@@ -1,10 +1,10 @@
 import "./App.css";
-import UseStateExample from "./components/UseStateExample";
+import UseEffectExample from "./components/UseEffectExample";
 
 function App() {
   return (
     <div>
-      <UseStateExample />
+      <UseEffectExample />
     </div>
   );
 }
