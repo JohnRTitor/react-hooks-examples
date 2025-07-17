@@ -1,10 +1,10 @@
 import "./App.css";
-import UseEffectExample from "./components/UseEffectExample";
+import UseMemoExample from "./components/UseMemoExample";
 
 function App() {
   return (
     <div>
-      <UseEffectExample />
+      <UseMemoExample />
     </div>
   );
 }

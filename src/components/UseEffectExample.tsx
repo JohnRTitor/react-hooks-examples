@@ -12,7 +12,7 @@ export default function UseEffectExample() {
     // whenever a dependency changes, before re rendering and executing the code
     // in the useEffect block, it runs this cleanup function
     return () => {
-      console.log("I am being cleaned up!");
+      console.log(`I am being cleaned up! ${count}`);
     };
   }, [count]); // dependency array, if empty, it will run once on client side mount
 
