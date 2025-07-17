@@ -7,7 +7,13 @@ export default function UseEffectExample() {
     // the code we want to run, when any one of the dependency array changes
     console.log("The count is:", count);
 
-    // optional return function
+    // optional return function/cleanup function
+    // this is similar to a destructor/finally in Java
+    // whenever a dependency changes, before re rendering and executing the code
+    // in the useEffect block, it runs this cleanup function
+    return () => {
+      console.log("I am being cleaned up!");
+    };
   }, [count]); // dependency array, if empty, it will run once on client side mount
 
   return (
