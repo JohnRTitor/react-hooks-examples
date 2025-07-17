@@ -5,13 +5,22 @@ export default function UseStateExample() {
 
   return (
     <div>
+      <p>Count: {count}</p>
       <button
         type="button"
         onClick={() => {
           setCount(count + 1);
         }}
       >
-        Click Me!: {count}
+        Increment
+      </button>{" "}
+      <button
+        type="button"
+        onClick={() => {
+          setCount(count - 1);
+        }}
+      >
+        Decrement
       </button>
     </div>
   );
